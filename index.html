@@ -10,6 +10,56 @@
     <script type="module" src="js/index.js"></script>
 </head>
 <body>
+    <header>
+        <h1>Schemer Color Palette Generator</h1>
+    </header>
+
+    <main>
+        <form action="" class="form">
+            <input type="color" name="seed-color" id="eye-dropper" class="form__eye-dropper">
+            <select name="scheme" id="dropdown" class="form__dropdown">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome Dark</option>
+                <option value="monochrome-light">Monochrome Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <input type="submit" class="form__submit" value="Get color scheme">
+        </form>
+
+        <section class="palette">
+            <div class="palette__color" id="color1">
+                <div class="color__img"></div>
+                <div class="color__code">#F55A5A</div>
+            </div>
+            <div class="palette__color" id="color2">
+                <div class="color__img"></div>
+                <div class="color__code">#2B283A</div>
+            </div>
+            <div class="palette__color" id="color3">
+                <div class="color__img"></div>
+                <div class="color__code">#FBF3AB</div>
+            </div>
+            <div class="palette__color" id="color4">
+                <div class="color__img"></div>
+                <div class="color__code">#AAD1B6</div>
+            </div>
+            <div class="palette__color" id="color5">
+                <div class="color__img"></div>
+                <div class="color__code">#A626D3</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>
+            Made with 🤍 by 
+            <a href="http://www.davidlarocco.dev">David LaRocco</a>
+        </p>
+    </footer>
     
 </body>
 </html>
