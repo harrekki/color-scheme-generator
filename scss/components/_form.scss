@@ -1,0 +1,51 @@
+@use '../util/' as u;
+
+.form {
+    padding: 0.5em 0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    &__eye-dropper {
+        width: 3.75em;
+        height: 2.625em;
+        border: 0.5px solid var(--gray);
+    }
+
+    &__dropdown {
+        margin-left: 0.75em;
+        padding: 0.75em 1em;
+        border: 1px solid var(--gray);
+        border-radius: 6px;
+        background: var(--white);
+        box-shadow: var(--shadow-sm);
+    }
+
+    &__submit {
+        display: block;
+        width: 350px;
+        margin: 1em auto 0;
+        padding: 0.75em;
+        border-radius: 4px;
+        border: 1px solid var(--gray);
+        background: var(--white, #FFF);
+
+        /* shadow/sm */
+        box-shadow: var(--shadow-sm);
+
+        @include u.for-tablet-up {
+            margin: 0;
+            width: auto;
+        }
+    }
+
+    @include u.for-tablet-up {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+

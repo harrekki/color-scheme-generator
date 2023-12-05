@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schemer Color Generator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" 
+        rel="stylesheet">
     <!-- SCSS -->
     <link rel="stylesheet" href="dist/css/main.css">
     <!-- JavaScript -->
@@ -11,29 +17,38 @@
 </head>
 <body>
     <header>
-        <h1>Schemer Color Palette Generator</h1>
+        <div class="container">
+            <div class="header">
+                <img src="img/schemer.png" alt="Schemer logo" class="header__logo">
+                <h1 class="header__title">Color Palette Generator</h1>
+            </div>
+        </div>
     </header>
 
     <main>
-        <form action="" class="form">
-            <input type="color" name="seed-color" id="eye-dropper" class="form__eye-dropper">
-            <select name="scheme" id="dropdown" class="form__dropdown">
-                <option value="monochrome">Monochrome</option>
-                <option value="monochrome-dark">Monochrome Dark</option>
-                <option value="monochrome-light">Monochrome Light</option>
-                <option value="analogic">Analogic</option>
-                <option value="complement">Complement</option>
-                <option value="analogic-complement">Analogic Complement</option>
-                <option value="triad">Triad</option>
-                <option value="quad">Quad</option>
-            </select>
-            <input type="submit" class="form__submit" value="Get color scheme">
-        </form>
+        <div class="container">
+            <form class="form">
+                <div class="form__container">
+                    <input type="color" name="seed-color" id="eye-dropper" class="form__eye-dropper">
+                    <select name="scheme" id="dropdown" class="form__dropdown">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome Dark</option>
+                        <option value="monochrome-light">Monochrome Light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic Complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                </div>
+                <input type="submit" class="form__submit" value="Get color scheme">
+            </form>
+        </div>
 
-        <section class="palette">
+        <section class="palette container">
             <div class="palette__color" id="color1">
                 <div class="color__img"></div>
-                <div class="color__code">#F55A5A</div>
+                <div class="color__code"><p>#F55A5A</p></div>
             </div>
             <div class="palette__color" id="color2">
                 <div class="color__img"></div>
